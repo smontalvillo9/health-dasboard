@@ -20,144 +20,66 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
-/* --- PANTALLA DE LOGIN --- */
-#login-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    transition: opacity 0.3s ease;
-}
+/* ... (estilos de login y app principal sin cambios) ... */
 
-#login-box {
-    background-color: var(--bg-medium);
-    padding: 40px;
-    border-radius: 12px;
-    border: 1px solid var(--bg-light);
-    text-align: center;
-    width: 90%;
-    max-width: 400px;
-}
+/* --- NUEVOS ESTILOS --- */
 
-#login-box h2 {
-    color: var(--primary-accent);
-    margin-top: 0;
-}
-
-#password-input {
-    width: calc(100% - 20px);
+/* Estilo para los campos recuadrados */
+.bordered-field {
+    border: 1px solid var(--primary-accent);
+    border-radius: 5px;
     padding: 10px;
-    margin: 20px 0;
-    border-radius: 5px;
-    border: 1px solid var(--bg-light);
-    background-color: var(--bg-dark);
-    color: var(--text-light);
-    font-size: 16px;
-}
-
-#login-button {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--primary-accent);
-    color: var(--bg-dark);
-    font-size: 18px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#login-button:hover { background-color: #e0bf00; }
-
-#login-error {
-    color: #e74c3c;
-    height: 20px;
     margin-top: 10px;
+    min-height: 40px; /* Para que el recuadro sea visible aunque esté vacío */
 }
 
-/* --- CLASES DE VISIBILIDAD --- */
-.hidden {
-    display: none !important;
+/* Barra de herramientas para edición de texto enriquecido */
+.rte-toolbar {
+    background-color: var(--bg-light);
+    border-radius: 5px;
+    padding: 5px;
+    display: inline-block;
+    position: absolute; /* Se posicionará cerca del elemento editable */
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 
-.visible {
-    display: flex !important;
-}
-
-/* --- APP PRINCIPAL --- */
-#app {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 20px;
-    transition: opacity 0.3s ease;
-}
-
-/* ... (resto de estilos sin cambios) ... */
-
-header {
-    background-color: var(--bg-medium);
-    padding: 25px;
-    border-radius: 12px;
-    margin-bottom: 30px;
-    text-align: center;
-    border: 1px solid var(--bg-light);
-}
-
-header h1 {
-    color: var(--primary-accent);
-    margin: 0 0 20px 0;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-nav button {
+.rte-toolbar button {
     background: transparent;
+    border: 1px solid transparent;
     color: var(--text-light);
-    border: 2px solid var(--bg-light);
-    padding: 12px 25px;
-    margin: 5px;
-    border-radius: 8px;
-    cursor: pointer;
     font-size: 16px;
-    font-weight: 600;
-    transition: all 0.3s ease;
+    font-weight: bold;
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
 }
 
-#logout-button {
-    border-color: #e74c3c;
-    color: #e74c3c;
-}
-
-#logout-button:hover {
-    background-color: #e74c3c;
-    color: var(--text-light);
-}
-
-nav button:hover {
-    border-color: var(--primary-accent);
-    color: var(--primary-accent);
-}
-
-nav button.active {
-    background-color: var(--primary-accent);
-    color: var(--bg-dark);
+.rte-toolbar button:hover {
+    background-color: var(--bg-dark);
     border-color: var(--primary-accent);
 }
 
+/* ... (resto de estilos sin cambios, pegados abajo para completitud) ... */
+
+#login-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); backdrop-filter: blur(10px); display: flex; justify-content: center; align-items: center; z-index: 1000; transition: opacity 0.3s ease; }
+#login-box { background-color: var(--bg-medium); padding: 40px; border-radius: 12px; border: 1px solid var(--bg-light); text-align: center; width: 90%; max-width: 400px; }
+#login-box h2 { color: var(--primary-accent); margin-top: 0; }
+#password-input { width: calc(100% - 20px); padding: 10px; margin: 20px 0; border-radius: 5px; border: 1px solid var(--bg-light); background-color: var(--bg-dark); color: var(--text-light); font-size: 16px; }
+#login-button { width: 100%; padding: 12px; border: none; border-radius: 5px; background-color: var(--primary-accent); color: var(--bg-dark); font-size: 18px; font-weight: 600; cursor: pointer; transition: background-color 0.3s ease; }
+#login-button:hover { background-color: #e0bf00; }
+#login-error { color: #e74c3c; height: 20px; margin-top: 10px; }
+.hidden { display: none !important; }
+.visible { display: flex !important; }
+#app { max-width: 1400px; margin: 0 auto; padding: 20px; transition: opacity 0.3s ease; }
+header { background-color: var(--bg-medium); padding: 25px; border-radius: 12px; margin-bottom: 30px; text-align: center; border: 1px solid var(--bg-light); }
+header h1 { color: var(--primary-accent); margin: 0 0 20px 0; font-weight: 600; letter-spacing: 1px; }
+nav { display: flex; flex-wrap: wrap; justify-content: center; }
+nav button { background: transparent; color: var(--text-light); border: 2px solid var(--bg-light); padding: 12px 25px; margin: 5px; border-radius: 8px; cursor: pointer; font-size: 16px; font-weight: 600; transition: all 0.3s ease; }
+#logout-button { border-color: #e74c3c; color: #e74c3c; }
+#logout-button:hover { background-color: #e74c3c; color: var(--text-light); }
+nav button:hover { border-color: var(--primary-accent); color: var(--primary-accent); }
+nav button.active { background-color: var(--primary-accent); color: var(--bg-dark); border-color: var(--primary-accent); }
 .view { display: none; animation: fadeIn 0.5s ease-in-out; border-radius: 12px; padding: 20px; margin-top: 10px; background-color: var(--bg-medium); }
 .view.active { display: block; }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
