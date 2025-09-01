@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Health Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Pantalla de Login -->
+    <div id="login-overlay" class="visible">
+        <div id="login-box">
+            <h2>Acceso Privado</h2>
+            <p>Introduce la contraseña para acceder a tu dashboard.</p>
+            <input type="password" id="password-input" placeholder="Contraseña...">
+            <button id="login-button">Entrar</button>
+            <p id="login-error"></p>
+        </div>
+    </div>
+
+    <!-- Contenido Principal de la App (inicialmente oculto) -->
+    <div id="app" class="hidden">
+        <header>
+            <h1>Premium Health Dashboard</h1>
+            <nav>
+                <button id="btn-profile" class="active">👤 Mi Perfil</button>
+                <button id="btn-diet">🥗 Dieta Semanal</button>
+                <button id="btn-exercise">💪 Rutina de Ejercicios</button>
+                <button id="btn-habits">✨ Hábitos Saludables</button>
+                <button id="btn-progress">📊 Progreso General</button>
+                <button id="btn-measurements">📏 Medidas Musculares</button>
+                <button id="logout-button">🔒 Salir</button>
+            </nav>
+        </header>
+        <main>
+            <div id="profile-view" class="view active">
+                <!-- Contenido del perfil se generará aquí -->
+            </div>
+            <div id="diet-view" class="view">
+                <!-- Contenido de la dieta se generará aquí -->
+            </div>
+            <div id="exercise-view" class="view">
+                <!-- Contenido de los ejercicios se generará aquí -->
+            </div>
+            <div id="habits-view" class="view">
+                <!-- Contenido de los hábitos se generará aquí -->
+            </div>
+            <div id="progress-view" class="view">
+                <!-- Contenido del progreso se generará aquí -->
+            </div>
+            <div id="measurements-view" class="view">
+                <!-- Contenido de las medidas se generará aquí -->
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

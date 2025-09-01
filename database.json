@@ -1,0 +1,786 @@
+{
+  "profile": {
+    "height": "175",
+    "weight": "70",
+    "fat": "15",
+    "muscle": "40"
+  },
+  "progress": [
+    {
+      "week": 1,
+      "actual": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      },
+      "targets": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      }
+    },
+    {
+      "week": 2,
+      "actual": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      },
+      "targets": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      }
+    },
+    {
+      "week": 3,
+      "actual": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      },
+      "targets": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      }
+    },
+    {
+      "week": 4,
+      "actual": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      },
+      "targets": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      }
+    },
+    {
+      "week": 5,
+      "actual": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      },
+      "targets": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      }
+    },
+    {
+      "week": 6,
+      "actual": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      },
+      "targets": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      }
+    },
+    {
+      "week": 7,
+      "actual": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      },
+      "targets": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      }
+    },
+    {
+      "week": 8,
+      "actual": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      },
+      "targets": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      }
+    },
+    {
+      "week": 9,
+      "actual": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      },
+      "targets": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      }
+    },
+    {
+      "week": 10,
+      "actual": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      },
+      "targets": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      }
+    },
+    {
+      "week": 11,
+      "actual": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      },
+      "targets": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      }
+    },
+    {
+      "week": 12,
+      "actual": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      },
+      "targets": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      }
+    },
+    {
+      "week": 13,
+      "actual": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      },
+      "targets": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      }
+    },
+    {
+      "week": 14,
+      "actual": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      },
+      "targets": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      }
+    },
+    {
+      "week": 15,
+      "actual": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      },
+      "targets": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      }
+    },
+    {
+      "week": 16,
+      "actual": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      },
+      "targets": {
+        "weight": "0",
+        "fat": "0",
+        "muscle": "0"
+      }
+    }
+  ],
+  "muscleMeasurements": [
+    {
+      "week": 1,
+      "actual": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      },
+      "targets": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      }
+    },
+    {
+      "week": 2,
+      "actual": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      },
+      "targets": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      }
+    },
+    {
+      "week": 3,
+      "actual": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      },
+      "targets": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      }
+    },
+    {
+      "week": 4,
+      "actual": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      },
+      "targets": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      }
+    },
+    {
+      "week": 5,
+      "actual": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      },
+      "targets": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      }
+    },
+    {
+      "week": 6,
+      "actual": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      },
+      "targets": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      }
+    },
+    {
+      "week": 7,
+      "actual": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      },
+      "targets": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      }
+    },
+    {
+      "week": 8,
+      "actual": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      },
+      "targets": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      }
+    },
+    {
+      "week": 9,
+      "actual": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      },
+      "targets": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      }
+    },
+    {
+      "week": 10,
+      "actual": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      },
+      "targets": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      }
+    },
+    {
+      "week": 11,
+      "actual": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      },
+      "targets": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      }
+    },
+    {
+      "week": 12,
+      "actual": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      },
+      "targets": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      }
+    },
+    {
+      "week": 13,
+      "actual": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      },
+      "targets": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      }
+    },
+    {
+      "week": 14,
+      "actual": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      },
+      "targets": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      }
+    },
+    {
+      "week": 15,
+      "actual": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      },
+      "targets": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      }
+    },
+    {
+      "week": 16,
+      "actual": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      },
+      "targets": {
+        "biceps": "0",
+        "shoulder": "0",
+        "chest": "0",
+        "abdomen": "0"
+      }
+    }
+  ],
+  "diet": {
+    "Lunes": [
+      {
+        "meal": "🍳 Desayuno",
+        "ingredients": "Avena, Leche, Frutos rojos",
+        "recipe": "Mezclar todo.",
+        "notes": ""
+      },
+      {
+        "meal": "🍎 Media Mañana",
+        "ingredients": "Yogur griego, Nueces",
+        "recipe": "Mezclar.",
+        "notes": ""
+      },
+      {
+        "meal": "🍗 Almuerzo",
+        "ingredients": "Pollo, Quinoa, Brócoli",
+        "recipe": "Todo a la plancha/cocido.",
+        "notes": ""
+      },
+      {
+        "meal": "🥜 Merienda",
+        "ingredients": "Fruta, Tortitas de arroz",
+        "recipe": "-",
+        "notes": ""
+      },
+      {
+        "meal": "🐟 Cena",
+        "ingredients": "Salmón, Espárragos",
+        "recipe": "Al horno.",
+        "notes": ""
+      }
+    ],
+    "Martes": [
+      {
+        "meal": "🍳 Desayuno",
+        "ingredients": "Avena, Leche, Frutos rojos",
+        "recipe": "Mezclar todo.",
+        "notes": ""
+      },
+      {
+        "meal": "🍎 Media Mañana",
+        "ingredients": "Yogur griego, Nueces",
+        "recipe": "Mezclar.",
+        "notes": ""
+      },
+      {
+        "meal": "🍗 Almuerzo",
+        "ingredients": "Pollo, Quinoa, Brócoli",
+        "recipe": "Todo a la plancha/cocido.",
+        "notes": ""
+      },
+      {
+        "meal": "🥜 Merienda",
+        "ingredients": "Fruta, Tortitas de arroz",
+        "recipe": "-",
+        "notes": ""
+      },
+      {
+        "meal": "🐟 Cena",
+        "ingredients": "Salmón, Espárragos",
+        "recipe": "Al horno.",
+        "notes": ""
+      }
+    ],
+    "Miércoles": [
+      {
+        "meal": "🍳 Desayuno",
+        "ingredients": "Avena, Leche, Frutos rojos",
+        "recipe": "Mezclar todo.",
+        "notes": ""
+      },
+      {
+        "meal": "🍎 Media Mañana",
+        "ingredients": "Yogur griego, Nueces",
+        "recipe": "Mezclar.",
+        "notes": ""
+      },
+      {
+        "meal": "🍗 Almuerzo",
+        "ingredients": "Pollo, Quinoa, Brócoli",
+        "recipe": "Todo a la plancha/cocido.",
+        "notes": ""
+      },
+      {
+        "meal": "🥜 Merienda",
+        "ingredients": "Fruta, Tortitas de arroz",
+        "recipe": "-",
+        "notes": ""
+      },
+      {
+        "meal": "🐟 Cena",
+        "ingredients": "Salmón, Espárragos",
+        "recipe": "Al horno.",
+        "notes": ""
+      }
+    ],
+    "Jueves": [
+      {
+        "meal": "🍳 Desayuno",
+        "ingredients": "Avena, Leche, Frutos rojos",
+        "recipe": "Mezclar todo.",
+        "notes": ""
+      },
+      {
+        "meal": "🍎 Media Mañana",
+        "ingredients": "Yogur griego, Nueces",
+        "recipe": "Mezclar.",
+        "notes": ""
+      },
+      {
+        "meal": "🍗 Almuerzo",
+        "ingredients": "Pollo, Quinoa, Brócoli",
+        "recipe": "Todo a la plancha/cocido.",
+        "notes": ""
+      },
+      {
+        "meal": "🥜 Merienda",
+        "ingredients": "Fruta, Tortitas de arroz",
+        "recipe": "-",
+        "notes": ""
+      },
+      {
+        "meal": "🐟 Cena",
+        "ingredients": "Salmón, Espárragos",
+        "recipe": "Al horno.",
+        "notes": ""
+      }
+    ],
+    "Viernes": [
+      {
+        "meal": "🍳 Desayuno",
+        "ingredients": "Avena, Leche, Frutos rojos",
+        "recipe": "Mezclar todo.",
+        "notes": ""
+      },
+      {
+        "meal": "🍎 Media Mañana",
+        "ingredients": "Yogur griego, Nueces",
+        "recipe": "Mezclar.",
+        "notes": ""
+      },
+      {
+        "meal": "🍗 Almuerzo",
+        "ingredients": "Pollo, Quinoa, Brócoli",
+        "recipe": "Todo a la plancha/cocido.",
+        "notes": ""
+      },
+      {
+        "meal": "🥜 Merienda",
+        "ingredients": "Fruta, Tortitas de arroz",
+        "recipe": "-",
+        "notes": ""
+      },
+      {
+        "meal": "🐟 Cena",
+        "ingredients": "Salmón, Espárragos",
+        "recipe": "Al horno.",
+        "notes": ""
+      }
+    ],
+    "Sábado": [
+      {
+        "meal": "🍳 Desayuno",
+        "ingredients": "Avena, Leche, Frutos rojos",
+        "recipe": "Mezclar todo.",
+        "notes": ""
+      },
+      {
+        "meal": "🍎 Media Mañana",
+        "ingredients": "Yogur griego, Nueces",
+        "recipe": "Mezclar.",
+        "notes": ""
+      },
+      {
+        "meal": "🍗 Almuerzo",
+        "ingredients": "Pollo, Quinoa, Brócoli",
+        "recipe": "Todo a la plancha/cocido.",
+        "notes": ""
+      },
+      {
+        "meal": "🥜 Merienda",
+        "ingredients": "Fruta, Tortitas de arroz",
+        "recipe": "-",
+        "notes": ""
+      },
+      {
+        "meal": "🐟 Cena",
+        "ingredients": "Salmón, Espárragos",
+        "recipe": "Al horno.",
+        "notes": ""
+      }
+    ],
+    "Domingo": [
+      {
+        "meal": "🍳 Desayuno",
+        "ingredients": "Avena, Leche, Frutos rojos",
+        "recipe": "Mezclar todo.",
+        "notes": ""
+      },
+      {
+        "meal": "🍎 Media Mañana",
+        "ingredients": "Yogur griego, Nueces",
+        "recipe": "Mezclar.",
+        "notes": ""
+      },
+      {
+        "meal": "🍗 Almuerzo",
+        "ingredients": "Pollo, Quinoa, Brócoli",
+        "recipe": "Todo a la plancha/cocido.",
+        "notes": ""
+      },
+      {
+        "meal": "🥜 Merienda",
+        "ingredients": "Fruta, Tortitas de arroz",
+        "recipe": "-",
+        "notes": ""
+      },
+      {
+        "meal": "🐟 Cena",
+        "ingredients": "Salmón, Espárragos",
+        "recipe": "Al horno.",
+        "notes": ""
+      }
+    ]
+  },
+  "exercises": {
+    "Lunes": [
+      {
+        "name": "Press de Banca 🏋️",
+        "sets": "4",
+        "reps": "8",
+        "weight": "60kg",
+        "description": "Empuje de barra desde el pecho en banco plano.",
+        "errors": "Arquear la espalda baja, rebotar la barra en el pecho."
+      }
+    ],
+    "Martes": [
+      {
+        "name": "Dominadas 💪",
+        "sets": "4",
+        "reps": "Al fallo",
+        "weight": "Corporal",
+        "description": "Elevar el cuerpo en una barra.",
+        "errors": "No subir completamente, usar impulso (kipping)."
+      }
+    ],
+    "Miércoles": [
+      {
+        "name": "Sentadillas con Barra 🦵",
+        "sets": "4",
+        "reps": "8",
+        "weight": "70kg",
+        "description": "Flexión de rodillas y cadera con barra en la espalda.",
+        "errors": "Bajar poco, inclinar el torso, rodillas hacia adentro."
+      }
+    ],
+    "Jueves": [
+      {
+        "name": "Press Militar con Barra 🏋️",
+        "sets": "4",
+        "reps": "8",
+        "weight": "35kg",
+        "description": "Empuje de barra por encima de la cabeza, de pie.",
+        "errors": "Arquear la espalda, usar impulso de las piernas."
+      }
+    ],
+    "Viernes": [
+      {
+        "name": "Peso Muerto 🔥",
+        "sets": "5",
+        "reps": "5",
+        "weight": "90kg",
+        "description": "Levantar barra del suelo.",
+        "errors": "Curvar la espalda, empezar con la cadera muy alta."
+      }
+    ],
+    "Sábado": [
+      {
+        "name": "🚶 Descanso Activo",
+        "sets": "1",
+        "reps": "30-60 min",
+        "weight": "N/A",
+        "description": "Caminata ligera, senderismo o ciclismo suave.",
+        "errors": "Forzar demasiado, no disfrutar del descanso.",
+        "notes": ""
+      }
+    ],
+    "Domingo": [
+      {
+        "name": "🧘 Descanso Total",
+        "sets": "N/A",
+        "reps": "N/A",
+        "weight": "N/A",
+        "description": "Día de recuperación completa. Escucha a tu cuerpo.",
+        "errors": "Sentirse culpable por no entrenar.",
+        "notes": ""
+      }
+    ]
+  },
+  "habits": [
+    {
+      "title": "💧 Hidratación",
+      "text": "Bebe al menos 2-3 litros de agua al día."
+    },
+    {
+      "title": "😴 Descanso",
+      "text": "Duerme entre 7 y 9 horas cada noche."
+    },
+    {
+      "title": "🥦 Micronutrientes",
+      "text": "Consume una amplia variedad de verduras y frutas."
+    },
+    {
+      "title": "❤️ Cardio Regular",
+      "text": "Incorpora 2-3 sesiones de cardio a la semana."
+    },
+    {
+      "title": "✅ Técnica sobre Peso",
+      "text": "Prioriza siempre la forma correcta en los ejercicios."
+    },
+    {
+      "title": "🍲 Planificación de Comidas",
+      "text": "Dedica tiempo a preparar tus comidas."
+    }
+  ]
+}
