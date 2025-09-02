@@ -1,786 +1,475 @@
 {
-  "profile": {
-    "height": "175",
-    "weight": "70",
-    "fat": "15",
-    "muscle": "40"
+  "dietaSemanal": {
+    "LUNES": {
+      "DESAYUNO": {
+        "ingredientes": "Avena Proteica con Frutos Rojos y Cacahuete: 60g avena, 1 scoop proteína, 10g cacahuete en polvo, 200ml agua/leche vegetal, 50g arándanos.",
+        "receta": "Calienta la avena con agua/leche vegetal hasta que espese. Retira del fuego, añade la proteína en polvo y el cacahuete en polvo, mezcla bien. Incorpora los arándanos por encima."
+      },
+      "ALMUERZO": {
+        "ingredientes": "Batido Proteico Mercadona y Almendras: 1 Batido Proteico Mercadona, 15g almendras.",
+        "receta": "Listo para consumir"
+      },
+      "COMIDA": {
+        "ingredientes": "Pavo Salteado con Quinoa y Calabacín: 200-220g pavo picado, 50g quinoa (crudo), 250g calabacín, 50g cebolla, 15g AOVE.",
+        "receta": "Cocina la quinoa según las instrucciones. Pica la cebolla y el calabacín. En una sartén, saltea la cebolla con 10g de AOVE, añade el pavo picado y cocina hasta que esté dorado. Incorpora el calabacín y cocina hasta que esté tierno. Mezcla con la quinoa cocida y los otros 5g de AOVE, sazona con sal y especias."
+      },
+      "MERIENDA": {
+        "ingredientes": "Batido de Proteína y Tortitas de Arroz con Crema de Cacahuete: 1 scoop proteína, agua, 3 tortitas de arroz, 20g crema de cacahuete.",
+        "receta": "Mezcla la proteína en polvo con agua en un shaker. Unta las tortitas de arroz con la crema de cacahuete. Consume el batido y las tortitas."
+      },
+      "CENA": {
+        "ingredientes": "Tortilla de Patatas \"Saludable\": 3 huevos enteros, 100g patatas cocidas, 50g cebolla, 10g AOVE, sal.",
+        "receta": "Pica cebolla y saltea con 5g de AOVE. Añade las patatas cocidas y troceadas, dora ligeramente. Bate los huevos con sal, añade las patatas y cebolla. Vierte la mezcla en la sartén con los otros 5g de AOVE y cuaja la tortilla."
+      }
+    },
+    "MARTES": {
+      "DESAYUNO": {
+        "ingredientes": "Huevos Revueltos con Champiñones y cebolla: 3 huevos enteros, 150g champiñones, 100g cebolla, 2 rebanadas pan integral (60g), 5g AOVE.",
+        "receta": "Lava y corta los champiñones. Saltea los champiñones en una sartén con 5g de AOVE hasta que suelten agua, añade las espinacas hasta que se reduzcan. Bate los huevos con sal y pimienta, viértelos en la sartén y revuelve hasta que estén cocidos. Tuesta el pan integral y rocía con los otros 5g de AOVE. Sirve los huevos con las verduras y el pan."
+      },
+      "ALMUERZO": {
+        "ingredientes": "Yogur Proteico Mercadona y Manzana: 1 Yogur Proteico Mercadona, 1 manzana.",
+        "receta": "Listo para consumir"
+      },
+      "COMIDA": {
+        "ingredientes": "Burrito Bowl Casero \"Deconstruido\": 200g ternera (95% magra), 100g arroz integral, 50 g de cebolla. 200g calabacín, 10g AOVE. Para el aderezo: 100g de yogur griego natural, zumo de medio limón.",
+        "receta": "Cocina el arroz. En una sartén, sofríe la cebolla con 5g de AOVE. Añade la carne y las especias, cocina. Ralla el calabacín e incorpóralo. Sirve el arroz como base en un bol, añade la mezcla de carne y verduras. Adereza con el yogur griego y un poco de zumo de limón si quieres."
+      },
+      "MERIENDA": {
+        "ingredientes": "Plátano y Nueces: 1 plátano, 20g nueces.",
+        "receta": "Listo para consumir"
+      },
+      "CENA": {
+        "ingredientes": "Merluza al Vapor con Coliflor y Zanahorias: 200g merluza, 250g coliflor, 200g zanahorias, 5g AOVE.",
+        "receta": "Cocina la merluza, la coliflor y las zanahorias (cortadas) al vapor hasta que estén tiernas. Al servir, rocía con el AOVE, sal y perejil."
+      }
+    },
+    "MIÉRCOLES": {
+      "DESAYUNO": {
+        "ingredientes": "Avena con Huevo y Cacahuete: 80g avena, 2 huevos duros, 20g cacahuete en polvo, 200ml agua/leche vegetal.",
+        "receta": "Cocina la avena con agua/leche vegetal. Retira del fuego. Pica los huevos duros y añádelos a la avena junto con el cacahuete en polvo y canela. Mezcla bien."
+      },
+      "ALMUERZO": {
+        "ingredientes": "Natilla Proteica Mercadona y Almendras: 1 Natilla Proteica Mercadona, 20g almendras.",
+        "receta": "Listo para consumir"
+      },
+      "COMIDA": {
+        "ingredientes": "Pasta Carbonara \"Fit\": 120g pechuga de pavo, 50g pasta integral, 1 yema de huevo, 30g parmesano, 50g champiñones, 5g AOVE.",
+        "receta": "Cocina la pasta. En una sartén, saltea el pavo troceado y los champiñones laminados con 5g de AOVE. En un bol, bate la yema con el parmesano y un poco del agua de cocción de la pasta. Escurre la pasta, mézclala con el pavo y champiñones en la sartén. Fuera del fuego, añade la salsa de yema y remueve rápido para que se cree la salsa sin que cuaje el huevo."
+      },
+      "MERIENDA": {
+        "ingredientes": "Yogur Griego y Crema Proteica: 180g yogur griego, 20g crema proteica.",
+        "receta": "Mezcla la crema proteica con el yogur griego."
+      },
+      "CENA": {
+        "ingredientes": "Pulpo a la Gallega \"Fitness\": 200g pulpo cocido, 150g patatas cocidas, 10g AOVE, pimentón dulce, sal gorda.",
+        "receta": "Trocea el pulpo cocido y las patatas cocidas de bote. Saltea ambos en una sartén con 5g de AOVE para calentar. Sirve en un plato, espolvorea con pimentón y sal, y rocía generosamente con los otros 10g de AOVE."
+      }
+    },
+    "JUEVES": {
+      "DESAYUNO": {
+        "ingredientes": "Batido de Proteína con Cacahuete y Plátano: 1 scoop proteína, 20g cacahuete en polvo, 1 plátano, 250ml agua/leche vegetal.",
+        "receta": "Mezcla la proteína en polvo, el cacahuete en polvo y el plátano con agua/leche vegetal en una batidora hasta obtener una consistencia suave."
+      },
+      "ALMUERZO": {
+        "ingredientes": "Batido Proteico Mercadona y Pavo Frío: 1 Batido Proteico Mercadona, 100g pechuga de pavo fría.",
+        "receta": "Listo para consumir"
+      },
+      "COMIDA": {
+        "ingredientes": "Poke Bowl de Atún: 200g lomo atún fresco, 100g quinoa (en crudo), 100g zanahoria rallada, 1/2 aguacate (100g), 15g AOVE, soja, sésamo. Salsa de yogur casera: 100g yogur griego natural, zumo de medio limón, 5g pasta de wasabi.",
+        "receta": "Cocina la quinoa. Cocina el atún en dados a la plancha/AirFryer (con 5g AOVE). En un bol, coloca la quinoa como base. Añade el atún, la zanahoria rallada y el aguacate troceado. Aliña con salsa de soja, sésamo y el resto del AOVE."
+      },
+      "MERIENDA": {
+        "ingredientes": "Atún en Lata y Tortitas de Arroz: 1 lata atún al natural, 3 tortitas de arroz.",
+        "receta": "Listo para consumir"
+      },
+      "CENA": {
+        "ingredientes": "Pechuga de Pollo con Champiñones y Coliflor Salteadas: 200g pechuga de pollo, 250g champiñones, 250g coliflor, 10g AOVE.",
+        "receta": "Corta la pechuga de pollo en tiras o dados. Lava y corta los champiñones. En una sartén, saltea el pollo con 10g de AOVE hasta que esté cocido. Añade los champiñones y el ajo picado, cocina unos minutos. Incorpora la coliflor congelada directamente. Al servir, rocía con los otros 5g de AOVE."
+      }
+    },
+    "VIERNES": {
+      "DESAYUNO": {
+        "ingredientes": "Avena Proteica con Crema de Cacahuete y Fresas: 60-80g avena, 1 scoop proteína, 20g crema de cacahuete, 50g fresas, 200ml agua/leche vegetal.",
+        "receta": "Calienta la avena con agua/leche vegetal. Retira del fuego, añade la proteína en polvo y mezcla. Incorpora la crema de cacahuete y las fresas cortadas por encima."
+      },
+      "ALMUERZO": {
+        "ingredientes": "Yogur Proteico Mercadona y Nueces: 1 Yogur Proteico Mercadona, 10g nueces.",
+        "receta": "Listo para consumir"
+      },
+      "COMIDA": {
+        "ingredientes": "Atún Congelado a la Plancha con Arroz Integral y Brócoli: 200g lomo de atún, 80g arroz integral (crudo), 200-300g brócoli, 10g AOVE.",
+        "receta": "Cocina el arroz integral según las instrucciones. Corta el brócoli en floretes. Sazona el lomo de atún con sal y limón, rocía con 5g de AOVE y cocina a la plancha al punto deseado. Saltea el brócoli con los otros 5g de AOVE o cuécelo al vapor. Sirve todo junto."
+      },
+      "MERIENDA": {
+        "ingredientes": "Batido de Proteína y Plátano: 1 scoop proteína, agua.",
+        "receta": "Mezcla la proteína en polvo con agua en un shaker. Consume el batido y el plátano."
+      },
+      "CENA": {
+        "ingredientes": "Nuggets Caseros \"Crunchy\" con Patatas en AirFryer y Salsa de Yogur: 200g pechuga de pollo, 15g pan rallado integral, especias , 100g patata cruda, 5g AOVE.10g para freidora/aliñar",
+        "receta": "(Receta Nuggets): Trocear pollo muy pequeño o picar. Mezclar con especias y pan rallado. Formar nuggets. Cocinar en AirFryer (20-25 min a 180°C) con 5g AOVE. (Receta Patatas): Preparar en AirFryer con 5g AOVE. (Receta Salsa): Mezclar ingredientes. Servir todo.)"
+      }
+    },
+    "SÁBADO": {
+      "DESAYUNO": {
+        "ingredientes": "Avena con Huevo y Frutos Rojos: 60g avena, 2 huevos duros, 1 scoop proteína, 50g arándanos, 200ml agua/leche vegetal.",
+        "receta": "Cocina la avena con agua/leche vegetal. Retira del fuego. Pica los huevos duros y añádelos a la avena junto con la proteína en polvo, almendras y arándanos. Mezcla bien."
+      },
+      "ALMUERZO": {
+        "ingredientes": "Natilla Proteica Mercadona y almendras: 1 Natilla Proteica Mercadona, 20g almendras.",
+        "receta": "Listo para consumir"
+      },
+      "COMIDA": {
+        "ingredientes": "Pollo a la Plancha con Coliflor y Zanahoria al Vapor: 200g pechuga de pollo, 250g coliflor, 250g zanahoria, 5g AOVE.",
+        "receta": "Cocina el pollo a la plancha con 5g de AOVE y sazona. Cocina la coliflor y los zanahorias al vapor hasta que estén tiernos. Al servir, rocía las verduras con los otros 5g de AOVE, sal y especias."
+      },
+      "MERIENDA": {
+        "ingredientes": "Yogur Griego y Crema Proteica: 180g yogur griego, 15g crema proteica.",
+        "receta": "Mezcla la crema proteica con el yogur griego."
+      },
+      "CENA": {
+        "ingredientes": "Hamburguesa \"Guay\" con Lacón Ahumado y Patatas en AirFryer: 1 pan integral, 200g carne picada (95% magra), 30g queso light, 50g cebolla morada, 10-15g salsa Valentina, 10-15g mostaza, 50g lacón ahumado, 1 huevo a la plancha. 100g de patatas y 10g de AOVE",
+        "receta": "Mezcla las patatas en un bol con los 5g de AOVE, sal y especias. Colócalas en la AirFryer. Cocína la carne en una sartén con un chorrito mínimo de AOVE (o en la AirFryer si tienes espacio y prefieres menos grasa) hasta que esté al punto deseado. Sazona con sal y pimienta. En otra sartén pequeña, cocina el lacón ahumado en lonchas hasta que esté ligeramente crujiente. En esa misma sartén, haz el huevo a la plancha a tu gusto"
+      }
+    },
+    "DOMINGO": {
+      "DESAYUNO": {
+        "ingredientes": "Avena con Huevo y Frutos Rojos: 60g avena, 2 huevos duros, 1 scoop proteína, 10g almendras, 50g arándanos, 200ml agua/leche vegetal.",
+        "receta": "Cocina la avena con agua/leche vegetal. Retira del fuego. Pica los huevos duros y añádelos a la avena junto con la proteína en polvo, almendras y arándanos. Mezcla bien."
+      },
+      "ALMUERZO": {
+        "ingredientes": "Queso Cottage: 150g queso cottage bajo en grasa.",
+        "receta": "Listo para consumir"
+      },
+      "COMIDA": {
+        "ingredientes": "Ensalada de Atún, Garbanzos y Huevo Cocido: Base de espinacas (150g), 100g zanahoria rallada, 1 lata de atún al natural (escurrido), 100g garbanzos cocidos (escurridos y enjuagados), 1 huevo cocido (duro), 15g AOVE, vinagre de manzana, sal.",
+        "receta": "Preparar una base con las espinacas y zanahoria rallada. Añadir el atún escurrido, los garbanzos cocidos y el huevo cocido picado. Mezclar todo en un bol. Aliñar con AOVE, vinagre de manzana y sal."
+      },
+      "MERIENDA": {
+        "ingredientes": "Pechuga de Pavo Fría: 100g pechuga de pavo fría.",
+        "receta": "Listo para consumir"
+      },
+      "CENA": {
+        "ingredientes": "Tortilla con Gambas o Pollo y Champiñones: 3 huevos enteros, 100g gambas/pollo, 200g champiñones, 10g AOVE.",
+        "receta": "Saltea las gambas o el pollo y los champiñones (cortados) con 10g de AOVE y ajo. Bate los huevos con sal y vierte sobre la mezcla en la sartén para hacer una tortilla. Rocía con los otros 5g de AOVE al servir."
+      }
+    },
+    "sustituciones": ""
   },
-  "progress": [
-    {
-      "week": 1,
-      "actual": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      },
-      "targets": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      }
-    },
-    {
-      "week": 2,
-      "actual": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      },
-      "targets": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      }
-    },
-    {
-      "week": 3,
-      "actual": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      },
-      "targets": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      }
-    },
-    {
-      "week": 4,
-      "actual": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      },
-      "targets": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      }
-    },
-    {
-      "week": 5,
-      "actual": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      },
-      "targets": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      }
-    },
-    {
-      "week": 6,
-      "actual": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      },
-      "targets": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      }
-    },
-    {
-      "week": 7,
-      "actual": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      },
-      "targets": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      }
-    },
-    {
-      "week": 8,
-      "actual": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      },
-      "targets": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      }
-    },
-    {
-      "week": 9,
-      "actual": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      },
-      "targets": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      }
-    },
-    {
-      "week": 10,
-      "actual": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      },
-      "targets": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      }
-    },
-    {
-      "week": 11,
-      "actual": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      },
-      "targets": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      }
-    },
-    {
-      "week": 12,
-      "actual": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      },
-      "targets": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      }
-    },
-    {
-      "week": 13,
-      "actual": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      },
-      "targets": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      }
-    },
-    {
-      "week": 14,
-      "actual": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      },
-      "targets": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      }
-    },
-    {
-      "week": 15,
-      "actual": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      },
-      "targets": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      }
-    },
-    {
-      "week": 16,
-      "actual": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      },
-      "targets": {
-        "weight": "0",
-        "fat": "0",
-        "muscle": "0"
-      }
+  "rutinaEjercicios": {
+    "calentamiento": "Movilidad articular general (rotaciones de hombros, codos, muñecas, cuello, cadera) seguida de 1-2 series muy ligeras del primer ejercicio para preparar los músculos.",
+    "enfriamiento": "Estiramientos suaves de los músculos trabajados.",
+    "descanso": "60-90 segundos para ejercicios compuestos (ej. Press de Banca, Sentadillas, Dominadas) y 45-75 segundos para ejercicios de aislamiento (ej. Elevaciones laterales, curls, extensiones).",
+    "dias": {
+      "Lunes: Empuje (Pecho, Hombro, Tríceps)": [
+        {
+          "nombre": "Press de Banca con Barra (Plano o Ligeramente Inclinado si tu banco lo permite)",
+          "peso": "44kg + 8Kg",
+          "series": "4 series de 8-12 repeticiones",
+          "descripcion": "Desbloquea la barra. Baja controladamente la barra hacia la parte media/baja del pecho, manteniendo los codos ligeramente metidos hacia el cuerpo (no abiertos en cruz). La barra debe tocar ligeramente el pecho (o casi, sin rebotar). Empuja explosivamente hacia arriba, extendiendo los brazos sin bloquear completamente los codos al final.",
+          "errores": "Rebote en el pecho, codos muy abiertos, levantar la cabeza o las caderas del banco, no controlar la bajada."
+        },
+        {
+          "nombre": "Press de Banca Inclinado con Mancuernas",
+          "peso": "15kg +2Kg",
+          "series": "3 series de 10-15 repeticiones",
+          "descripcion": "Empuja las mancuernas hacia arriba y ligeramente hacia adentro, hasta que se junten o casi se toquen en la parte superior. Baja controladamente, abriendo los codos ligeramente hacia los lados y hacia abajo, sintiendo el estiramiento en el pecho.",
+          "errores": "Demasiada inclinación (convirtiéndose en press de hombros), no controlar la bajada, dejar caer los codos hacia atrás."
+        },
+        {
+          "nombre": "Aperturas con Mancuernas (Plano o Inclinado)",
+          "peso": "13kg +2Kg",
+          "series": "3 series de 12-15 repeticiones",
+          "descripcion": "Abre los brazos hacia los lados en un amplio arco, como si quisieras abrazar un gran árbol, sintiendo el estiramiento profundo en el pecho. Cuando las mancuernas estén a la altura de tus hombros (o un poco más abajo si tu flexibilidad lo permite sin forzar el hombro), invierte el movimiento y cierra los brazos, contrayendo el pecho al final.",
+          "errores": "Flexionar y extender los codos (convirtiéndolo en press), usar demasiado peso y perder el control, no sentir el estiramiento en el pecho."
+        },
+        {
+          "nombre": "Press Militar con Barra de Pie (o Sentado en el banco)",
+          "peso": "24kg + 8kg",
+          "series": "3 series de 8-12 repeticiones",
+          "descripcion": "Empuja la barra verticalmente hacia arriba, justo por encima de la cabeza, extendiendo los brazos sin bloquear los codos. Baja controladamente la barra a la posición inicial.",
+          "errores": "Arquear excesivamente la espalda baja, empujar la barra hacia adelante en lugar de recta hacia arriba, usar demasiado impulso con las piernas (si es de pie)."
+        },
+        {
+          "nombre": "Elevaciones Laterales con Mancuernas",
+          "peso": "8kg + 2Kg + 2",
+          "series": "3 series de 12-15 repeticiones",
+          "descripcion": "Levanta los brazos hacia los lados, con los codos ligeramente flexionados, como si quisieras \"verter agua de una jarra\", llevando los meñiques ligeramente más altos que los pulgares. Sube solo hasta la altura de los hombros. Baja controladamente.",
+          "errores": "Usar demasiado peso y balancearse, encoger los hombros hacia las orejas, subir los brazos por encima de la altura del hombro."
+        },
+        {
+          "nombre": "Extensiones de Tríceps con Barra Z (o mancuerna a dos manos) por encima de la cabeza",
+          "peso": "20kg + 6Kg + 4",
+          "series": "3 series de 10-15 repeticiones",
+          "descripcion": "Flexiona los codos lentamente para bajar la barra por detrás de la cabeza, sintiendo el estiramiento en los tríceps. Extiende los brazos para subir la barra, contrayendo fuertemente los tríceps en la parte superior. Mantén los codos lo más estáticos posible.",
+          "errores": "Abrir los codos hacia los lados, usar demasiado peso y balancear el cuerpo."
+        },
+        {
+          "nombre": "Fondos en Banco (para tríceps) o Press Francés con Barra Z",
+          "peso": "",
+          "series": "3 series al fallo o 10-15 repeticiones",
+          "descripcion": "Fondos en Banco: Siéntate en el borde de un banco, manos a los lados de las caderas, dedos hacia adelante. Desliza las caderas del banco, baja el cuerpo flexionando los codos (que deben apuntar hacia atrás, no hacia los lados) hasta que los brazos formen un ángulo de 90 grados. Empuja hacia arriba con los tríceps. Para más dificultad, puedes apoyar los pies en otro banco.",
+          "errores": "Abrir los codos hacia los lados, no bajar lo suficiente o bajar demasiado rápido, usar demasiada ayuda de las piernas."
+        }
+      ],
+      "Martes: Piernas y Core / Entrenamiento Funcional": [
+        {
+          "nombre": "Sentadilla con Barra (Frontal o Trasera)",
+          "peso": "20",
+          "series": "3-4 series de 8-12 repeticiones",
+          "descripcion": "Inicia el movimiento bajando las caderas como si te fueras a sentar en una silla. Baja hasta que tus muslos estén paralelos al suelo o más abajo si tu movilidad lo permite. Las rodillas deben seguir la dirección de las puntas de tus pies. Empuja desde los talones para subir, extendiendo caderas y rodillas simultáneamente.",
+          "errores": "Arquear la espalda baja excesivamente, rodillas que se meten hacia adentro, no bajar lo suficiente, levantar los talones del suelo."
+        },
+        {
+          "nombre": "Peso Muerto Rumano con Mancuernas",
+          "peso": "15",
+          "series": "3 series de 10-15 repeticiones",
+          "descripcion": "Inicia el movimiento inclinándote hacia adelante desde las caderas, no desde la cintura. Baja las mancuernas por las piernas, manteniendo la espalda recta y sintiendo el estiramiento en la parte posterior de los muslos (isquiotibiales). Baja hasta que sientas un buen estiramiento o hasta que las mancuernas estén a la altura de las tibias (o un poco más abajo si mantienes la forma). Vuelve a subir apretando los glúteos, sin hiperextender la espalda al final.",
+          "errores": "Redondear la espalda, flexionar demasiado las rodillas (convirtiéndolo en sentadilla), no sentir el estiramiento en los isquiotibiales."
+        },
+        {
+          "nombre": "Zancadas con Mancuernas (Alternas)",
+          "peso": "10",
+          "series": "3 series de 10-12 repeticiones por pierna",
+          "descripcion": "Da un paso largo hacia adelante con una pierna. Baja la cadera hasta que ambas rodillas formen un ángulo de 90 grados. La rodilla de atrás debe apuntar hacia el suelo (sin tocarlo), y la rodilla de adelante no debe sobrepasar la punta del pie. Empuja con la pierna de adelante para volver a la posición inicial. Alterna las piernas.",
+          "errores": "Paso demasiado corto (rodilla de adelante se va muy lejos), balancearse, perder el equilibrio."
+        },
+        {
+          "nombre": "Puente de Glúteo (Glute Bridge) con Peso",
+          "peso": "10",
+          "series": "3 series de 15-20 repeticiones",
+          "descripcion": "Eleva las caderas del suelo apretando fuertemente los glúteos, hasta que tu cuerpo forme una línea recta desde los hombros hasta las rodillas. Mantén la contracción un segundo en la parte superior. Baja controladamente.",
+          "errores": "Arquear la espalda baja en lugar de usar los glúteos, no contraer los glúteos en la parte superior."
+        },
+        {
+          "nombre": "Plancha Lateral",
+          "peso": "",
+          "series": "3 series de 30-45 segundos por lado",
+          "descripcion": "Mantén el core apretado, los glúteos contraídos. Evita que la cadera caiga o se eleve demasiado.",
+          "errores": "Dejar caer la cadera, hundir el hombro, no mantener una línea recta."
+        },
+        {
+          "nombre": "Rodillo Abdominal",
+          "peso": "",
+          "series": "3 series de 10-15 repeticiones",
+          "descripcion": "Rueda el rodillo hacia adelante, extendiendo el cuerpo, manteniendo el core apretado y la espalda recta. No dejes que la espalda se arquee. Extiéndete lo más que puedas controladamente. Vuelve a la posición inicial contrayendo fuertemente los abdominales.",
+          "errores": "Arquear la espalda baja, no controlar la vuelta, extenderse demasiado sin tener la fuerza para volver."
+        }
+      ],
+      "Miércoles: Tirón (Espalda, Bíceps, Trapecios)": [
+        {
+          "nombre": "Dominadas (Agarre Prono, Ancho)",
+          "peso": "",
+          "series": "3 series al fallo",
+          "descripcion": "Tira de ti mismo hacia arriba, llevando el pecho hacia la barra, enfocándote en tirar con la espalda (imagina llevar los codos hacia tus caderas). Sube hasta que la barbilla supere la barra. Baja controladamente, estirando los brazos completamente.",
+          "errores": "Usar el impulso de las piernas, no subir lo suficiente, no bajar del todo, encoger los hombros."
+        },
+        {
+          "nombre": "Remo con Barra (Pendlay Row o similar)",
+          "peso": "34kg + 8kg",
+          "series": "4 series de 8-12 repeticiones",
+          "descripcion": "Tira de la barra hacia tu abdomen bajo, apretando los omóplatos. La barra debe tocar tu abdomen. Baja controladamente la barra al suelo en cada repetición (Pendlay).",
+          "errores": "Redondear la espalda, no bajar la barra del todo, usar el impulso del cuerpo."
+        },
+        {
+          "nombre": "Remo con Mancuernas a una Mano",
+          "peso": "15Kg + 2Kg",
+          "series": "3 series de 10-15 repeticiones por brazo",
+          "descripcion": "Tira de la mancuerna hacia tu cadera, elevando el codo hacia el techo y apretando el omóplato. Siente la contracción en la espalda. Baja controladamente, estirando completamente el brazo.",
+          "errores": "Redondear la espalda, rotar excesivamente el torso, usar impulso."
+        },
+        {
+          "nombre": "Face Pull (con banda de resistencia)",
+          "peso": "",
+          "series": "3 series de 15-20 repeticiones",
+          "descripcion": "Tira de la banda/peso hacia tu cara, separando las manos y llevando los codos hacia atrás y hacia los lados. Concéntrate en apretar la parte trasera de los hombros (deltoides posteriores) y los omóplatos.",
+          "errores": "Usar demasiado peso, encoger los hombros, no sentir el trabajo en la parte trasera del hombro."
+        },
+        {
+          "nombre": "Curl de Bíceps con Barra Z (o mancuernas alternas)",
+          "peso": "20kg + 6Kg",
+          "series": "3 series de 10-15 repeticiones",
+          "descripcion": "Flexiona los codos para subir la barra hacia los hombros, contrayendo el bíceps. Mantén los codos fijos y no uses el impulso de la espalda. Baja controladamente, estirando completamente los brazos.",
+          "errores": "Balancear el cuerpo, separar los codos del cuerpo, no bajar del todo."
+        },
+        {
+          "nombre": "Martillo con Mancuernas",
+          "peso": "10kg + 2Kg",
+          "series": "3 series de 10-15 repeticiones",
+          "descripcion": "Flexiona los codos para subir las mancuernas hacia los hombros, manteniendo las palmas enfrentadas (como si estuvieras martillando). Baja controladamente.",
+          "errores": "Similar al curl de bíceps, balancear el cuerpo."
+        },
+        {
+          "nombre": "Encogimientos de Hombros con Mancuernas (para trapecios)",
+          "peso": "20kg + 2Kg",
+          "series": "3 series de 15-20 repeticiones",
+          "descripcion": "Encoge los hombros directamente hacia las orejas, sintiendo la contracción en los trapecios. Mantén la posición un segundo. Baja controladamente, estirando los trapecios.",
+          "errores": "Girar los hombros, usar demasiado peso y balancear, no sentir la contracción en los trapecios."
+        }
+      ],
+      "Jueves: Torso Superior Enfocado (Variedad y Volumen)": [
+        {
+          "nombre": "Press de Banca Declinado con Barra (o Press Plano)",
+          "peso": "40 + 8Kg",
+          "series": "3 series de 8-12 repeticiones",
+          "descripcion": "Baja la barra hacia la parte inferior del pecho y empuja hacia arriba. El ángulo declinado enfatiza la parte inferior del pecho. Si haces press plano, la técnica es la misma que el lunes.",
+          "errores": "No controlar la bajada, dejar que los codos se abran demasiado."
+        },
+        {
+          "nombre": "Press de Hombros con Mancuernas (sentado)",
+          "peso": "13KG",
+          "series": "3 series de 10-15 repeticiones",
+          "descripcion": "Empuja las mancuernas verticalmente hacia arriba, extendiendo los brazos sin bloquear los codos. Baja controladamente a la altura de los hombros.",
+          "errores": "Arquear la espalda, balancear el cuerpo, dejar caer las mancuernas rápidamente."
+        },
+        {
+          "nombre": "Fondos en Paralelas",
+          "peso": "",
+          "series": "3 series al fallo o 10-15 repeticiones",
+          "descripcion": "Baja el cuerpo flexionando los codos. Para enfocar el pecho, inclínate ligeramente hacia adelante y deja que los codos se abran un poco. Para tríceps, mantente más recto y pega los codos al cuerpo. Baja hasta un estiramiento cómodo en el pecho/hombro. Empuja para subir.",
+          "errores": "No controlar la bajada, no bajar lo suficiente, usar impulso."
+        },
+        {
+          "nombre": "Remo al Mentón con Barra Z",
+          "peso": "20 + 6 Kg",
+          "series": "3 series de 12-15 repeticiones",
+          "descripcion": "Tira de la barra hacia tu mentón, elevando los codos por encima de la barra. Concéntrate en usar la parte lateral de los hombros y los trapecios. Baja controladamente.",
+          "errores": "Usar demasiado peso y balancear el cuerpo, tirar con los bíceps, no elevar los codos."
+        },
+        {
+          "nombre": "Aperturas Invertidas con Mancuernas (para deltoides posteriores)",
+          "peso": "5+ 2 Kg",
+          "series": "3 series de 15-20 repeticiones",
+          "descripcion": "Levanta los brazos hacia los lados, como si volaras, llevando las mancuernas hacia el techo. Concéntrate en apretar la parte trasera de los hombros y los omóplatos. Baja controladamente.",
+          "errores": "Usar demasiado peso y balancear, encoger los hombros, no sentir el trabajo en la parte trasera del hombro."
+        },
+        {
+          "nombre": "Curl de Bíceps Concentrado con Mancuerna",
+          "peso": "8+ 2 Kg",
+          "series": "3 series de 10-15 repeticiones por brazo",
+          "descripcion": "Sube la mancuerna hacia el hombro, contrayendo el bíceps de forma aislada. Mantén el codo firmemente apoyado y el resto del cuerpo inmóvil. Baja muy lentamente, controlando la fase excéntrica.",
+          "errores": "Usar impulso, no controlar la fase negativa, no estirar el brazo del todo."
+        },
+        {
+          "nombre": "Extensiones de Tríceps por encima de la cabeza con una Mancuerna a dos manos",
+          "peso": "20 + 2 Kg",
+          "series": "3 series de 12-15 repeticiones",
+          "descripcion": "Flexiona los codos para bajar la mancuerna por detrás de la cabeza, sintiendo el estiramiento en los tríceps. Extiende los brazos para subir, contrayendo fuertemente los tríceps.",
+          "errores": "Abrir los codos, mover los hombros o la espalda para ayudar el movimiento."
+        }
+      ],
+      "Viernes: Empuje (Pecho, Hombro, Tríceps) - Segunda Sesión": [
+        {
+          "nombre": "Press de Banca con Mancuernas (Plano)",
+          "peso": "15 + 2 Kg",
+          "series": "4 series de 8-12 repeticiones",
+          "descripcion": "Empuja las mancuernas hacia arriba, extendiendo los brazos y contrayendo el pecho. Baja controladamente, permitiendo un estiramiento profundo del pecho (las mancuernas pueden ir ligeramente más allá del punto donde iría la barra).",
+          "errores": "Dejar caer las mancuernas, perder el control del movimiento, no contraer el pecho."
+        },
+        {
+          "nombre": "Press de Hombros con Barra (sentado o de pie)",
+          "peso": "24kg + 8kg",
+          "series": "3 series de 8-12 repeticiones",
+          "descripcion": "Similar al lunes, pero puedes optar por la barra para variar el estímulo.",
+          "errores": ""
+        },
+        {
+          "nombre": "Cruces con Mancuernas en el suelo (o en banco inclinado)",
+          "peso": "5 + 2 Kg",
+          "series": "3 series de 12-15 repeticiones",
+          "descripcion": "Abre los brazos hacia los lados en un arco amplio, sintiendo el estiramiento en el pecho. Cierra las mancuernas sobre el pecho, contrayendo.",
+          "errores": "Flexionar los codos demasiado, usar impulso, no sentir el estiramiento."
+        },
+        {
+          "nombre": "Elevaciones Frontales con Mancuernas",
+          "peso": "3 + 2 Kg",
+          "series": "3 series de 12-15 repeticiones",
+          "descripcion": "Levanta los brazos rectos hacia adelante, hasta la altura de los hombros. No subas más arriba. Baja controladamente.",
+          "errores": "Balancear el cuerpo, levantar los brazos por encima de los hombros, usar el trapecio."
+        },
+        {
+          "nombre": "Press Cerrado con Barra (para tríceps)",
+          "peso": "24 + 8 Kg",
+          "series": "3 series de 10-15 repeticiones",
+          "descripcion": "Baja la barra hacia la parte baja del pecho, manteniendo los codos pegados al cuerpo. Empuja hacia arriba con los tríceps, bloqueando los codos al final.",
+          "errores": "Abrir los codos, usar demasiado peso y balancear la barra."
+        },
+        {
+          "nombre": "Extensiones de Tríceps con Mancuerna (a una mano)",
+          "peso": "5 + 2 Kg",
+          "series": "3 series de 12-15 repeticiones por brazo",
+          "descripcion": "Flexiona el codo para bajar la mancuerna por detrás de la cabeza, sintiendo el estiramiento en el tríceps. Extiende para subir, contrayendo el tríceps.",
+          "errores": "Abrir el codo hacia el lado, no controlar la bajada."
+        }
+      ],
+      "Sábado: Descanso Activo / Abdominales / Cardio": [
+        {
+          "nombre": "Abdominales con Rodillo Abdominal",
+          "peso": "",
+          "series": "3-4 series al fallo o 10-15 repeticiones (controladas)",
+          "descripcion": "De rodillas, sujeta el rodillo. Rueda hacia adelante, extendiendo el cuerpo, manteniendo el core apretado y la espalda recta. Vuelve a la posición inicial.",
+          "errores": ""
+        },
+        {
+          "nombre": "Plancha Abdominal",
+          "peso": "",
+          "series": "3 series, aguantando 45-60 segundos",
+          "descripcion": "Apóyate en los antebrazos y las puntas de los pies, manteniendo el cuerpo recto como una tabla.",
+          "errores": ""
+        },
+        {
+          "nombre": "Elevaciones de Piernas colgado de la barra de dominadas",
+          "peso": "",
+          "series": "3 series de 10-15 repeticiones",
+          "descripcion": "Cuélgate de la barra. Levanta las piernas rectas (o ligeramente flexionadas) hacia el pecho, contrayendo el abdomen. Baja controladamente.",
+          "errores": ""
+        },
+        {
+          "nombre": "Comba (Cardio)",
+          "peso": "",
+          "series": "20-30 minutos",
+          "descripcion": "Salta la comba a un ritmo constante o realizando intervalos (ej. 1 minuto saltando, 30 segundos descansando).",
+          "errores": ""
+        }
+      ]
     }
-  ],
-  "muscleMeasurements": [
-    {
-      "week": 1,
-      "actual": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      },
-      "targets": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      }
-    },
-    {
-      "week": 2,
-      "actual": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      },
-      "targets": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      }
-    },
-    {
-      "week": 3,
-      "actual": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      },
-      "targets": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      }
-    },
-    {
-      "week": 4,
-      "actual": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      },
-      "targets": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      }
-    },
-    {
-      "week": 5,
-      "actual": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      },
-      "targets": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      }
-    },
-    {
-      "week": 6,
-      "actual": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      },
-      "targets": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      }
-    },
-    {
-      "week": 7,
-      "actual": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      },
-      "targets": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      }
-    },
-    {
-      "week": 8,
-      "actual": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      },
-      "targets": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      }
-    },
-    {
-      "week": 9,
-      "actual": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      },
-      "targets": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      }
-    },
-    {
-      "week": 10,
-      "actual": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      },
-      "targets": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      }
-    },
-    {
-      "week": 11,
-      "actual": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      },
-      "targets": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      }
-    },
-    {
-      "week": 12,
-      "actual": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      },
-      "targets": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      }
-    },
-    {
-      "week": 13,
-      "actual": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      },
-      "targets": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      }
-    },
-    {
-      "week": 14,
-      "actual": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      },
-      "targets": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      }
-    },
-    {
-      "week": 15,
-      "actual": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      },
-      "targets": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      }
-    },
-    {
-      "week": 16,
-      "actual": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      },
-      "targets": {
-        "biceps": "0",
-        "shoulder": "0",
-        "chest": "0",
-        "abdomen": "0"
-      }
-    }
-  ],
-  "diet": {
-    "Lunes": [
-      {
-        "meal": "🍳 Desayuno",
-        "ingredients": "Avena, Leche, Frutos rojos",
-        "recipe": "Mezclar todo.",
-        "notes": ""
-      },
-      {
-        "meal": "🍎 Media Mañana",
-        "ingredients": "Yogur griego, Nueces",
-        "recipe": "Mezclar.",
-        "notes": ""
-      },
-      {
-        "meal": "🍗 Almuerzo",
-        "ingredients": "Pollo, Quinoa, Brócoli",
-        "recipe": "Todo a la plancha/cocido.",
-        "notes": ""
-      },
-      {
-        "meal": "🥜 Merienda",
-        "ingredients": "Fruta, Tortitas de arroz",
-        "recipe": "-",
-        "notes": ""
-      },
-      {
-        "meal": "🐟 Cena",
-        "ingredients": "Salmón, Espárragos",
-        "recipe": "Al horno.",
-        "notes": ""
-      }
+  },
+  "progreso": {
+    "general": [
+      { "semana": 1, "pesoObjetivo": 69.00, "pesoReal": 70.40, "grasaObjetivo": "17,00%", "grasaReal": "16,50%", "musculoObjetivo": 33.1, "musculoReal": 33.79 },
+      { "semana": 2, "pesoObjetivo": 68.70, "pesoReal": 68.90, "grasaObjetivo": "16,50%", "grasaReal": "16,20%", "musculoObjetivo": 33.3, "musculoReal": 33.76 },
+      { "semana": 3, "pesoObjetivo": 68.50, "pesoReal": 68.30, "grasaObjetivo": "15,90%", "grasaReal": "16,00%", "musculoObjetivo": 33.6, "musculoReal": 34.15 },
+      { "semana": 4, "pesoObjetivo": 68.30, "pesoReal": 69.30, "grasaObjetivo": "15,40%", "grasaReal": "16,50%", "musculoObjetivo": 33.8, "musculoReal": 35.50 },
+      { "semana": 5, "pesoObjetivo": 68.20, "pesoReal": 67.50, "grasaObjetivo": "14,90%", "grasaReal": "15,70%", "musculoObjetivo": 34.1, "musculoReal": 34.76 },
+      { "semana": 6, "pesoObjetivo": 68.00, "pesoReal": 67.60, "grasaObjetivo": "14,40%", "grasaReal": "14,60%", "musculoObjetivo": 34.3, "musculoReal": 35.00 },
+      { "semana": 7, "pesoObjetivo": 67.90, "pesoReal": 67.50, "grasaObjetivo": "14,00%", "grasaReal": "14,20%", "musculoObjetivo": 34.6, "musculoReal": null },
+      { "semana": 8, "pesoObjetivo": 67.80, "pesoReal": null, "grasaObjetivo": "13,60%", "grasaReal": null, "musculoObjetivo": 34.9, "musculoReal": null },
+      { "semana": 9, "pesoObjetivo": 67.70, "pesoReal": null, "grasaObjetivo": "13,20%", "grasaReal": null, "musculoObjetivo": 35.2, "musculoReal": null },
+      { "semana": 10, "pesoObjetivo": 67.60, "pesoReal": null, "grasaObjetivo": "12,80%", "grasaReal": null, "musculoObjetivo": 35.5, "musculoReal": null },
+      { "semana": 11, "pesoObjetivo": 67.50, "pesoReal": null, "grasaObjetivo": "12,40%", "grasaReal": null, "musculoObjetivo": 35.8, "musculoReal": null },
+      { "semana": 12, "pesoObjetivo": 67.40, "pesoReal": null, "grasaObjetivo": "12,00%", "grasaReal": null, "musculoObjetivo": 36.1, "musculoReal": null },
+      { "semana": 13, "pesoObjetivo": 67.30, "pesoReal": null, "grasaObjetivo": "11,60%", "grasaReal": null, "musculoObjetivo": 36.3, "musculoReal": null },
+      { "semana": 14, "pesoObjetivo": 67.20, "pesoReal": null, "grasaObjetivo": "11,20%", "grasaReal": null, "musculoObjetivo": 36.6, "musculoReal": null },
+      { "semana": 15, "pesoObjetivo": 67.10, "pesoReal": null, "grasaObjetivo": "10,80%", "grasaReal": null, "musculoObjetivo": 36.9, "musculoReal": null },
+      { "semana": 16, "pesoObjetivo": 67.00, "pesoReal": null, "grasaObjetivo": "10,00%", "grasaReal": null, "musculoObjetivo": 37.2, "musculoReal": null }
     ],
-    "Martes": [
-      {
-        "meal": "🍳 Desayuno",
-        "ingredients": "Avena, Leche, Frutos rojos",
-        "recipe": "Mezclar todo.",
-        "notes": ""
-      },
-      {
-        "meal": "🍎 Media Mañana",
-        "ingredients": "Yogur griego, Nueces",
-        "recipe": "Mezclar.",
-        "notes": ""
-      },
-      {
-        "meal": "🍗 Almuerzo",
-        "ingredients": "Pollo, Quinoa, Brócoli",
-        "recipe": "Todo a la plancha/cocido.",
-        "notes": ""
-      },
-      {
-        "meal": "🥜 Merienda",
-        "ingredients": "Fruta, Tortitas de arroz",
-        "recipe": "-",
-        "notes": ""
-      },
-      {
-        "meal": "🐟 Cena",
-        "ingredients": "Salmón, Espárragos",
-        "recipe": "Al horno.",
-        "notes": ""
-      }
-    ],
-    "Miércoles": [
-      {
-        "meal": "🍳 Desayuno",
-        "ingredients": "Avena, Leche, Frutos rojos",
-        "recipe": "Mezclar todo.",
-        "notes": ""
-      },
-      {
-        "meal": "🍎 Media Mañana",
-        "ingredients": "Yogur griego, Nueces",
-        "recipe": "Mezclar.",
-        "notes": ""
-      },
-      {
-        "meal": "🍗 Almuerzo",
-        "ingredients": "Pollo, Quinoa, Brócoli",
-        "recipe": "Todo a la plancha/cocido.",
-        "notes": ""
-      },
-      {
-        "meal": "🥜 Merienda",
-        "ingredients": "Fruta, Tortitas de arroz",
-        "recipe": "-",
-        "notes": ""
-      },
-      {
-        "meal": "🐟 Cena",
-        "ingredients": "Salmón, Espárragos",
-        "recipe": "Al horno.",
-        "notes": ""
-      }
-    ],
-    "Jueves": [
-      {
-        "meal": "🍳 Desayuno",
-        "ingredients": "Avena, Leche, Frutos rojos",
-        "recipe": "Mezclar todo.",
-        "notes": ""
-      },
-      {
-        "meal": "🍎 Media Mañana",
-        "ingredients": "Yogur griego, Nueces",
-        "recipe": "Mezclar.",
-        "notes": ""
-      },
-      {
-        "meal": "🍗 Almuerzo",
-        "ingredients": "Pollo, Quinoa, Brócoli",
-        "recipe": "Todo a la plancha/cocido.",
-        "notes": ""
-      },
-      {
-        "meal": "🥜 Merienda",
-        "ingredients": "Fruta, Tortitas de arroz",
-        "recipe": "-",
-        "notes": ""
-      },
-      {
-        "meal": "🐟 Cena",
-        "ingredients": "Salmón, Espárragos",
-        "recipe": "Al horno.",
-        "notes": ""
-      }
-    ],
-    "Viernes": [
-      {
-        "meal": "🍳 Desayuno",
-        "ingredients": "Avena, Leche, Frutos rojos",
-        "recipe": "Mezclar todo.",
-        "notes": ""
-      },
-      {
-        "meal": "🍎 Media Mañana",
-        "ingredients": "Yogur griego, Nueces",
-        "recipe": "Mezclar.",
-        "notes": ""
-      },
-      {
-        "meal": "🍗 Almuerzo",
-        "ingredients": "Pollo, Quinoa, Brócoli",
-        "recipe": "Todo a la plancha/cocido.",
-        "notes": ""
-      },
-      {
-        "meal": "🥜 Merienda",
-        "ingredients": "Fruta, Tortitas de arroz",
-        "recipe": "-",
-        "notes": ""
-      },
-      {
-        "meal": "🐟 Cena",
-        "ingredients": "Salmón, Espárragos",
-        "recipe": "Al horno.",
-        "notes": ""
-      }
-    ],
-    "Sábado": [
-      {
-        "meal": "🍳 Desayuno",
-        "ingredients": "Avena, Leche, Frutos rojos",
-        "recipe": "Mezclar todo.",
-        "notes": ""
-      },
-      {
-        "meal": "🍎 Media Mañana",
-        "ingredients": "Yogur griego, Nueces",
-        "recipe": "Mezclar.",
-        "notes": ""
-      },
-      {
-        "meal": "🍗 Almuerzo",
-        "ingredients": "Pollo, Quinoa, Brócoli",
-        "recipe": "Todo a la plancha/cocido.",
-        "notes": ""
-      },
-      {
-        "meal": "🥜 Merienda",
-        "ingredients": "Fruta, Tortitas de arroz",
-        "recipe": "-",
-        "notes": ""
-      },
-      {
-        "meal": "🐟 Cena",
-        "ingredients": "Salmón, Espárragos",
-        "recipe": "Al horno.",
-        "notes": ""
-      }
-    ],
-    "Domingo": [
-      {
-        "meal": "🍳 Desayuno",
-        "ingredients": "Avena, Leche, Frutos rojos",
-        "recipe": "Mezclar todo.",
-        "notes": ""
-      },
-      {
-        "meal": "🍎 Media Mañana",
-        "ingredients": "Yogur griego, Nueces",
-        "recipe": "Mezclar.",
-        "notes": ""
-      },
-      {
-        "meal": "🍗 Almuerzo",
-        "ingredients": "Pollo, Quinoa, Brócoli",
-        "recipe": "Todo a la plancha/cocido.",
-        "notes": ""
-      },
-      {
-        "meal": "🥜 Merienda",
-        "ingredients": "Fruta, Tortitas de arroz",
-        "recipe": "-",
-        "notes": ""
-      },
-      {
-        "meal": "🐟 Cena",
-        "ingredients": "Salmón, Espárragos",
-        "recipe": "Al horno.",
-        "notes": ""
-      }
+    "medidas": [
+      { "semana": 1, "bicepsObjetivo": 33.7, "bicepsReal": 33.7, "cinturaObjetivo": 80.3, "cinturaReal": 80.3, "pechoObjetivo": 97.0, "pechoReal": 97.0, "hombrosObjetivo": 115.7, "hombrosReal": 115.7 },
+      { "semana": 2, "bicepsObjetivo": 33.7, "bicepsReal": 33.7, "cinturaObjetivo": 79.8, "cinturaReal": 79.4, "pechoObjetivo": 97.0, "pechoReal": 97.0, "hombrosObjetivo": 115.7, "hombrosReal": 118.0 },
+      { "semana": 3, "bicepsObjetivo": 33.8, "bicepsReal": 33.8, "cinturaObjetivo": 79.5, "cinturaReal": 79.3, "pechoObjetivo": 97.2, "pechoReal": 97.9, "hombrosObjetivo": 115.8, "hombrosReal": 116.0 },
+      { "semana": 4, "bicepsObjetivo": 33.9, "bicepsReal": 33.9, "cinturaObjetivo": 79.2, "cinturaReal": 79.0, "pechoObjetivo": 97.4, "pechoReal": 99.0, "hombrosObjetivo": 116.0, "hombrosReal": 117.5 },
+      { "semana": 5, "bicepsObjetivo": 34.0, "bicepsReal": 34.0, "cinturaObjetivo": 78.6, "cinturaReal": 78.2, "pechoObjetivo": 97.8, "pechoReal": 99.6, "hombrosObjetivo": 116.4, "hombrosReal": 117.0 },
+      { "semana": 6, "bicepsObjetivo": 34.1, "bicepsReal": 34.0, "cinturaObjetivo": 78.6, "cinturaReal": 78.2, "pechoObjetivo": 97.8, "pechoReal": 99.6, "hombrosObjetivo": 116.4, "hombrosReal": 117.0 },
+      { "semana": 7, "bicepsObjetivo": 34.2, "bicepsReal": 34.0, "cinturaObjetivo": 78.3, "cinturaReal": 78.2, "pechoObjetivo": 98.0, "pechoReal": 98.7, "hombrosObjetivo": 116.6, "hombrosReal": 117.3 },
+      { "semana": 8, "bicepsObjetivo": 34.3, "bicepsReal": null, "cinturaObjetivo": 78.0, "cinturaReal": null, "pechoObjetivo": 98.2, "pechoReal": null, "hombrosObjetivo": 116.8, "hombrosReal": null },
+      { "semana": 9, "bicepsObjetivo": 34.4, "bicepsReal": null, "cinturaObjetivo": 77.7, "cinturaReal": null, "pechoObjetivo": 98.4, "pechoReal": null, "hombrosObjetivo": 117.0, "hombrosReal": null },
+      { "semana": 10, "bicepsObjetivo": 34.5, "bicepsReal": null, "cinturaObjetivo": 77.4, "cinturaReal": null, "pechoObjetivo": 98.6, "pechoReal": null, "hombrosObjetivo": 117.2, "hombrosReal": null },
+      { "semana": 11, "bicepsObjetivo": 34.6, "bicepsReal": null, "cinturaObjetivo": 77.1, "cinturaReal": null, "pechoObjetivo": 98.8, "pechoReal": null, "hombrosObjetivo": 117.4, "hombrosReal": null },
+      { "semana": 12, "bicepsObjetivo": 34.7, "bicepsReal": null, "cinturaObjetivo": 76.8, "cinturaReal": null, "pechoObjetivo": 99.0, "pechoReal": null, "hombrosObjetivo": 117.6, "hombrosReal": null },
+      { "semana": 13, "bicepsObjetivo": 34.8, "bicepsReal": null, "cinturaObjetivo": 76.5, "cinturaReal": null, "pechoObjetivo": 99.2, "pechoReal": null, "hombrosObjetivo": 117.8, "hombrosReal": null },
+      { "semana": 14, "bicepsObjetivo": 34.9, "bicepsReal": null, "cinturaObjetivo": 76.2, "cinturaReal": null, "pechoObjetivo": 99.4, "pechoReal": null, "hombrosObjetivo": 118.0, "hombrosReal": null },
+      { "semana": 15, "bicepsObjetivo": 35.0, "bicepsReal": null, "cinturaObjetivo": 75.9, "cinturaReal": null, "pechoObjetivo": 99.6, "pechoReal": null, "hombrosObjetivo": 118.2, "hombrosReal": null },
+      { "semana": 16, "bicepsObjetivo": 35.1, "bicepsReal": null, "cinturaObjetivo": 75.6, "cinturaReal": null, "pechoObjetivo": 99.8, "pechoReal": null, "hombrosObjetivo": 118.4, "hombrosReal": null }
     ]
-  },
-  "exercises": {
-    "Lunes": [
-      {
-        "name": "Press de Banca 🏋️",
-        "sets": "4",
-        "reps": "8",
-        "weight": "60kg",
-        "description": "Empuje de barra desde el pecho en banco plano.",
-        "errors": "Arquear la espalda baja, rebotar la barra en el pecho."
-      }
-    ],
-    "Martes": [
-      {
-        "name": "Dominadas 💪",
-        "sets": "4",
-        "reps": "Al fallo",
-        "weight": "Corporal",
-        "description": "Elevar el cuerpo en una barra.",
-        "errors": "No subir completamente, usar impulso (kipping)."
-      }
-    ],
-    "Miércoles": [
-      {
-        "name": "Sentadillas con Barra 🦵",
-        "sets": "4",
-        "reps": "8",
-        "weight": "70kg",
-        "description": "Flexión de rodillas y cadera con barra en la espalda.",
-        "errors": "Bajar poco, inclinar el torso, rodillas hacia adentro."
-      }
-    ],
-    "Jueves": [
-      {
-        "name": "Press Militar con Barra 🏋️",
-        "sets": "4",
-        "reps": "8",
-        "weight": "35kg",
-        "description": "Empuje de barra por encima de la cabeza, de pie.",
-        "errors": "Arquear la espalda, usar impulso de las piernas."
-      }
-    ],
-    "Viernes": [
-      {
-        "name": "Peso Muerto 🔥",
-        "sets": "5",
-        "reps": "5",
-        "weight": "90kg",
-        "description": "Levantar barra del suelo.",
-        "errors": "Curvar la espalda, empezar con la cadera muy alta."
-      }
-    ],
-    "Sábado": [
-      {
-        "name": "🚶 Descanso Activo",
-        "sets": "1",
-        "reps": "30-60 min",
-        "weight": "N/A",
-        "description": "Caminata ligera, senderismo o ciclismo suave.",
-        "errors": "Forzar demasiado, no disfrutar del descanso.",
-        "notes": ""
-      }
-    ],
-    "Domingo": [
-      {
-        "name": "🧘 Descanso Total",
-        "sets": "N/A",
-        "reps": "N/A",
-        "weight": "N/A",
-        "description": "Día de recuperación completa. Escucha a tu cuerpo.",
-        "errors": "Sentirse culpable por no entrenar.",
-        "notes": ""
-      }
-    ]
-  },
-  "habits": [
-    {
-      "title": "💧 Hidratación",
-      "text": "Bebe al menos 2-3 litros de agua al día."
-    },
-    {
-      "title": "😴 Descanso",
-      "text": "Duerme entre 7 y 9 horas cada noche."
-    },
-    {
-      "title": "🥦 Micronutrientes",
-      "text": "Consume una amplia variedad de verduras y frutas."
-    },
-    {
-      "title": "❤️ Cardio Regular",
-      "text": "Incorpora 2-3 sesiones de cardio a la semana."
-    },
-    {
-      "title": "✅ Técnica sobre Peso",
-      "text": "Prioriza siempre la forma correcta en los ejercicios."
-    },
-    {
-      "title": "🍲 Planificación de Comidas",
-      "text": "Dedica tiempo a preparar tus comidas."
-    }
-  ]
+  }
 }

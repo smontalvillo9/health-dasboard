@@ -86,7 +86,7 @@ nav button.active { background-color: var(--primary-accent); color: var(--bg-dar
 .day-selector { display: flex; justify-content: center; margin-bottom: 20px; flex-wrap: wrap; }
 .day-btn { background-color: var(--bg-light); color: var(--text-light); border: none; padding: 10px 20px; margin: 5px; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease; }
 .day-btn.active, .day-btn:hover { background-color: var(--primary-accent); color: var(--bg-dark); }
-.day-content { background-color: var(--bg-dark); padding: 25px; border-radius: 8px; border: 1px solid var(--bg-light); }
+.day-content { background-color: var(--bg-dark); padding: 25px; border-radius: 8px; border: 1px solid var(--primary-accent); }
 .item-card { background-color: var(--bg-medium); border: 1px solid var(--bg-light); border-radius: 8px; padding: 20px; margin-top: 15px; position: relative; }
 .item-card h3 { margin-top: 0; color: var(--primary-accent); font-weight: 600; }
 .item-card p { margin: 8px 0; word-break: break-word; }
