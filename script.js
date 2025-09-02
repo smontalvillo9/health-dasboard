@@ -72,12 +72,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- LÓGICA DE RENDERIZADO ---
     function renderProfile() {
         const p = healthData.profile;
-        const lastProgress = [...healthData.progress].reverse().find(prog => prog.actual.weight != null);
-        if (lastProgress) {
-            p.weight = lastProgress.actual.weight;
-            p.fat = (lastProgress.actual.fat || 0) + '%';
-            p.muscle = lastProgress.actual.muscle;
-        }
+        // Find the last valid value for each metric independently
+        const lastWeight = [...healthData.progress].reverse().find(prog => prog.actual.weight != null)?.actual.weight;
+        const lastFat = [...healthData.progress].reverse().find(prog => prog.actual.fat != null)?.actual.fat;
+        const lastMuscle = [...healthData.progress].reverse().find(prog => prog.actual.muscle != null)?.actual.muscle;
+
+        // Update profile data, falling back to existing values if no new ones are found
+        if (lastWeight) p.weight = lastWeight;
+        if (lastFat) p.fat = lastFat + '%';
+        if (lastMuscle) p.muscle = lastMuscle;
         p.height = '180';
 
         views.profile.innerHTML = `<div class="profile-card"><h2>👤 Mis Datos Actuales</h2><div class="profile-item"><span>Altura (cm)</span><span class="value">${p.height}</span></div><div class="profile-item"><span>Peso (kg)</span><span class="value">${p.weight}</span></div><div class="profile-item"><span>% Grasa</span><span class="value">${p.fat}</span></div><div class="profile-item"><span>Masa Muscular (kg)</span><span class="value">${p.muscle}</span></div></div>`;

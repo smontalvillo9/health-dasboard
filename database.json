@@ -136,6 +136,33 @@
       {"name": "Elevaciones de Piernas colgado", "weight": "", "series": "3", "reps": "10-15", "description": "Cuélgate de la barra. Levanta las piernas rectas (o ligeramente flexionadas) hacia el pecho, contrayendo el abdomen. Baja controladamente.", "errors": ""},
       {"name": "Comba (Cardio)", "weight": "", "series": "1", "reps": "20-30 minutos", "description": "Salta la comba a un ritmo constante o realizando intervalos (ej. 1 minuto saltando, 30 segundos descansando).", "errors": ""}
     ]
+  ,
+    "Domingo: Descanso y Recuperación": [
+      {
+        "name": "Descanso Activo",
+        "series": "N/A",
+        "reps": "30-60 minutos",
+        "weight": "Muy Ligero",
+        "description": "El descanso es cuando el músculo crece y se repara. Este día es crucial. Realiza una actividad de muy baja intensidad como caminar a paso ligero, un paseo en bici suave o nadar. El objetivo es mover el cuerpo, aumentar el flujo sanguíneo y ayudar a la recuperación sin causar fatiga.",
+        "errors": "Confundir descanso activo con un entrenamiento ligero. No debe ser un reto. Otro error común es la inactividad total; un poco de movimiento es mejor que nada para evitar la rigidez."
+      },
+      {
+        "name": "Estiramientos Completos y Movilidad",
+        "series": "1-2",
+        "reps": "30-60s por estiramiento",
+        "weight": "N/A",
+        "description": "Dedica tiempo a estirar todos los grupos musculares trabajados durante la semana. Concéntrate en mantener estiramientos estáticos y suaves. Puedes incluir ejercicios de movilidad articular para mejorar el rango de movimiento.",
+        "errors": "Forzar el estiramiento hasta sentir dolor, hacer rebotes, o no mantener la posición el tiempo suficiente. La paciencia es clave."
+      },
+      {
+        "name": "Mindfulness y Preparación Mental",
+        "series": "1",
+        "reps": "10-15 minutos",
+        "weight": "N/A",
+        "description": "Dedica un momento a meditar o simplemente a respirar profundamente. Visualiza tus metas para la próxima semana, revisa tu progreso y refuerza tu compromiso. La preparación mental es tan importante como la física.",
+        "errors": "Distraerse con el móvil, pensar que es una pérdida de tiempo, o no ser constante con la práctica."
+      }
+    ]
   },
   "progress": [
     { "week": 1, "actual": {"weight": 70.40, "fat": 16.50, "muscle": 33.79}, "targets": {"weight": 69.00, "fat": 17.00, "muscle": 33.1} },
