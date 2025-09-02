@@ -1,13 +1,64 @@
+
 document.addEventListener('DOMContentLoaded', () => {
 
     let healthData;
     let progressChart, measurementsChart;
     let authToken = null;
 
+    // --- ELEMENTOS DEL DOM ---
+    const loginOverlay = document.getElementById('login-overlay');
+    const passwordInput = document.getElementById('password-input');
+    const loginButton = document.getElementById('login-button');
+    const loginError = document.getElementById('login-error');
+    const appContainer = document.getElementById('app');
+    const logoutButton = document.getElementById('logout-button');
+
     const views = { profile: document.getElementById('profile-view'), diet: document.getElementById('diet-view'), exercise: document.getElementById('exercise-view'), habits: document.getElementById('habits-view'), progress: document.getElementById('progress-view'), measurements: document.getElementById('measurements-view') };
     const buttons = { profile: document.getElementById('btn-profile'), diet: document.getElementById('btn-diet'), exercise: document.getElementById('btn-exercise'), habits: document.getElementById('btn-habits'), progress: document.getElementById('btn-progress'), measurements: document.getElementById('btn-measurements') };
     const translations = { weight: 'Peso', fat: '% Grasa', muscle: 'M. Muscular', biceps: 'Bíceps', shoulder: 'Hombro', chest: 'Pecho', abdomen: 'Abdomen' };
 
+    // --- LÓGICA DE AUTENTICACIÓN ---
+    async function handleLogin() {
+        const password = passwordInput.value;
+        if (!password) {
+            loginError.textContent = 'Por favor, introduce una contraseña.';
+            return;
+        }
+        try {
+            const response = await fetch('/api/login', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ password: password })
+            });
+            if (response.ok) {
+                const data = await response.json();
+                authToken = data.accessToken;
+                sessionStorage.setItem('authToken', authToken);
+                await showApp();
+            } else {
+                loginError.textContent = 'Contraseña incorrecta.';
+            }
+        } catch (error) {
+            loginError.textContent = 'Error de conexión con el servidor.';
+        }
+    }
+
+    function handleLogout() {
+        authToken = null;
+        sessionStorage.removeItem('authToken');
+        appContainer.classList.add('hidden');
+        loginOverlay.classList.remove('hidden');
+        loginOverlay.classList.add('visible');
+    }
+
+    async function showApp() {
+        loginOverlay.classList.add('hidden');
+        loginOverlay.classList.remove('visible');
+        appContainer.classList.remove('hidden');
+        await main();
+    }
+
+    // --- LÓGICA DE DATOS ---
     async function fetchData() {
         try {
             const response = await fetch('/api/data');
@@ -18,17 +69,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // --- LÓGICA DE RENDERIZADO ---
     function renderProfile() {
         const p = healthData.profile;
         const lastProgress = [...healthData.progress].reverse().find(prog => prog.actual.weight != null);
         if (lastProgress) {
             p.weight = lastProgress.actual.weight;
-            p.fat = lastProgress.actual.fat + '%';
+            p.fat = (lastProgress.actual.fat || 0) + '%';
             p.muscle = lastProgress.actual.muscle;
         }
         p.height = '180';
 
-        views.profile.innerHTML = `<div class="profile-card"><h2>👤 Mis Datos Actuales</h2><div class="profile-item"><span>Altura (cm)</span><span class="value editable" data-group="profile" data-key="height">${p.height}</span></div><div class="profile-item"><span>Peso (kg)</span><span class="value">${p.weight}</span></div><div class="profile-item"><span>% Grasa</span><span class="value">${p.fat}</span></div><div class="profile-item"><span>Masa Muscular (kg)</span><span class="value">${p.muscle}</span></div></div>`;
+        views.profile.innerHTML = `<div class="profile-card"><h2>👤 Mis Datos Actuales</h2><div class="profile-item"><span>Altura (cm)</span><span class="value">${p.height}</span></div><div class="profile-item"><span>Peso (kg)</span><span class="value">${p.weight}</span></div><div class="profile-item"><span>% Grasa</span><span class="value">${p.fat}</span></div><div class="profile-item"><span>Masa Muscular (kg)</span><span class="value">${p.muscle}</span></div></div>`;
     }
 
     function renderHabits() {
@@ -57,7 +109,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 const mealEmojis = { DESAYUNO: "🥞", ALMUERZO: "🥪", COMIDA: "🍝", MERIENDA: "🍎", CENA: "🍗" };
                 const mealEmoji = mealEmojis[item.meal] || '🍴';
                 return `<div class="item-card">
-                            <button class="delete-button" data-view="${viewName}" data-datakey="${dataKey}" data-day="${day}" data-index="${index}">&times;</button>
                             <h3>${mealEmoji} <span class="editable" data-group="${dataKey}" data-day="${day}" data-index="${index}" data-key="meal">${item.meal}</span></h3>
                             <div class="bordered-subsection">
                                 <p>📝 <strong>Ingredientes:</strong> <span class="editable" data-group="${dataKey}" data-day="${day}" data-index="${index}" data-key="ingredients">${item.ingredients}</span></p>
@@ -71,7 +122,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>`;
             } else { // exercises
                 return `<div class="item-card">
-                            <button class="delete-button" data-view="${viewName}" data-datakey="${dataKey}" data-day="${day}" data-index="${index}">&times;</button>
                             <h3><span class="editable" data-group="${dataKey}" data-day="${day}" data-index="${index}" data-key="name">${item.name}</span></h3>
                             <p>
                                 <strong>Series:</strong> <span class="editable" data-group="${dataKey}" data-day="${day}" data-index="${index}" data-key="series">${item.series}</span> |
@@ -87,8 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>`;
             }
         }).join('');
-        const addButtonHtml = `<button class="action-button add-button" data-view="${viewName}" data-datakey="${dataKey}" data-day="${day}">+ Añadir Elemento</button>`;
-        container.innerHTML = `<div class="day-content">${itemsHtml}${addButtonHtml}</div>`;
+        container.innerHTML = `<div class="day-content">${itemsHtml}</div>`;
     }
 
     function renderGenericProgress(viewName, dataKey, title, chartInstance, datasetsConfig) {
@@ -96,11 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const ctx = document.getElementById(`${dataKey}Chart`).getContext('2d');
         const labels = healthData[dataKey].map(p => `Sem ${p.week}`);
         if (chartInstance) chartInstance.destroy();
-        chartInstance = new Chart(ctx, {
-            type: 'line',
-            data: { labels: labels, datasets: datasetsConfig(healthData[dataKey]) },
-            options: { responsive: true, plugins: { legend: { labels: { color: '#f5f5f5' } } }, scales: { y: { ticks: { color: '#f5f5f5' } }, x: { ticks: { color: '#f5f5f5' } } } }
-        });
+        chartInstance = new Chart(ctx, { type: 'line', data: { labels: labels, datasets: datasetsConfig(healthData[dataKey]) }, options: { responsive: true, plugins: { legend: { labels: { color: '#f5f5f5' } } }, scales: { y: { ticks: { color: '#f5f5f5' } }, x: { ticks: { color: '#f5f5f5' } } } } });
         renderGenericTable(viewName, dataKey, title, Object.keys(healthData[dataKey][0].actual));
         return chartInstance;
     }
@@ -141,7 +186,6 @@ document.addEventListener('DOMContentLoaded', () => {
         Object.keys(buttons).forEach(key => {
             buttons[key].addEventListener('click', () => switchView(key));
         });
-        // Event delegation for dynamic content
         document.querySelector('main').addEventListener('click', (e) => {
             const target = e.target;
             if (target.classList.contains('day-btn')) {
@@ -153,5 +197,15 @@ document.addEventListener('DOMContentLoaded', () => {
         switchView('profile');
     }
 
-    main();
+    // --- PUNTO DE ENTRADA ---
+    loginButton.addEventListener('click', handleLogin);
+    passwordInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') handleLogin(); });
+    logoutButton.addEventListener('click', handleLogout);
+
+    // Comprobar si ya existe un token en la sesión al cargar la página
+    const existingToken = sessionStorage.getItem('authToken');
+    if (existingToken) {
+        authToken = existingToken;
+        showApp();
+    } 
 });
